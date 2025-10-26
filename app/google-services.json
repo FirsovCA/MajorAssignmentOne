@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "617878831501",
+    "project_id": "majorassignmentone",
+    "storage_bucket": "majorassignmentone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617878831501:android:dc0d798f199a4f57acbdc4",
+        "android_client_info": {
+          "package_name": "com.example.majorassignmentone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaHmKBbNsqAweqhqsksMH3rERv-jhmfCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
