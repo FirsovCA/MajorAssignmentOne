@@ -23,8 +23,8 @@ class WelcomeActivity : AppCompatActivity() {
         binding.tvUsername.text = username
 
         binding.btnBack.setOnClickListener {
-            val intent_main = Intent(this, MainActivity::class.java)
-            startActivity(intent_main)
+            val intentMain = Intent(this, MainActivity::class.java)
+            startActivity(intentMain)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

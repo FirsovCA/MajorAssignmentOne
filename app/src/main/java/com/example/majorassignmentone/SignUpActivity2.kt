@@ -24,7 +24,6 @@ class SignUpActivity2 : AppCompatActivity() {
         val usersCollection = firestore.collection("Users")
 
         binding.btnCreateAccount.setOnClickListener {
-            var isUsernameCorrect = true
             var isPasswordCorrect = true
 
             val username = binding.etUsername.text.toString()
@@ -36,7 +35,7 @@ class SignUpActivity2 : AppCompatActivity() {
                 || !username.contains(".")
                 || username.length < 5
                 ) {
-                isUsernameCorrect = false
+
                 val message = "The username must follow the email pattern"
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
             } else {
@@ -64,7 +63,7 @@ class SignUpActivity2 : AppCompatActivity() {
                     Toast.makeText(this, "Passwords don't match", Toast.LENGTH_SHORT).show()
                 }
 
-                if (isUsernameCorrect && isPasswordCorrect) {
+                if (isPasswordCorrect) {
                     val userCredentials = hashMapOf(
                         "username" to username,
                         "password" to password

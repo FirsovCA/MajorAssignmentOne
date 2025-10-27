@@ -20,29 +20,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSignUp.setOnClickListener {
-            val intent_sign_up = Intent(this, SignUpActivity::class.java)
-            startActivity(intent_sign_up)
+            val intentSignUp = Intent(this, SignUpActivity::class.java)
+            startActivity(intentSignUp)
         }
 
         binding.btnLogin.setOnClickListener {
-            val intent_login = Intent(this, LoginActivity::class.java)
-            startActivity(intent_login)
+            val intentLogin = Intent(this, LoginActivity::class.java)
+            startActivity(intentLogin)
         }
 
         binding.btnSignUp2.setOnClickListener {
-            val intent_sign_up_2 = Intent(this, SignUpActivity2::class.java)
-            startActivity(intent_sign_up_2)
+            val intentSignUp2 = Intent(this, SignUpActivity2::class.java)
+            startActivity(intentSignUp2)
         }
 
         binding.btnLogin2.setOnClickListener {
-            val intent_login_2 = Intent(this, LoginActivity2::class.java)
-            startActivity(intent_login_2)
+            val intentLogin2 = Intent(this, LoginActivity2::class.java)
+            startActivity(intentLogin2)
         }
 
         binding.btnUpdates.setOnClickListener {
             val url = "https://play.google.com/store/apps"
-            val intent_open_website = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-            startActivity(intent_open_website)
+            val intentOpenWebsite = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(intentOpenWebsite)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

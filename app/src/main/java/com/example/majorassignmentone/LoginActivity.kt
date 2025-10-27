@@ -30,9 +30,9 @@ class LoginActivity : AppCompatActivity() {
             val savedPassword = localStorage.getString("PASSWORD", null)
 
             if (username == savedUsername && password == savedPassword) {
-                val intent_welcome = Intent(this, WelcomeActivity::class.java)
-                intent_welcome.putExtra("USERNAME", username)
-                startActivity(intent_welcome)
+                val intentWelcome = Intent(this, WelcomeActivity::class.java)
+                intentWelcome.putExtra("USERNAME", username)
+                startActivity(intentWelcome)
             } else {
                 Toast.makeText(this, "Username or password is incorrect. Try again!", Toast.LENGTH_LONG).show()
             }

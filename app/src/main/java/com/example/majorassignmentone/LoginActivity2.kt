@@ -1,7 +1,6 @@
 package com.example.majorassignmentone
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -35,9 +34,9 @@ class LoginActivity2 : AppCompatActivity() {
                     val savedPassword = report.data?.get("password")
 
                     if (username == savedUsername && password == savedPassword) {
-                        val intent_welcome = Intent(this, WelcomeActivity::class.java)
-                        intent_welcome.putExtra("USERNAME", username)
-                        startActivity(intent_welcome)
+                        val intentWelcome = Intent(this, WelcomeActivity::class.java)
+                        intentWelcome.putExtra("USERNAME", username)
+                        startActivity(intentWelcome)
                     } else {
                         Toast.makeText(this, "Username or password is incorrect. Try again!", Toast.LENGTH_LONG).show()
                     }
